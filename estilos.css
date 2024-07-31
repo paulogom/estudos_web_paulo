@@ -1,0 +1,36 @@
+/* importação da biblioteca de fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* incorporação de fonte por arquivo */
+@font-face {
+    font-family: jester;
+    src: url(fontes/Jester.ttf);
+}
+
+body{
+    background-color: darkcyan;
+    color:white;
+    font-size:16px;HTML e CSS; Estrutura e formatação de links: Arquivo externo de estilos.
+}
+
+h1,h2,h3{
+    color:blue;
+    background-color: cyan;
+}
+
+h1{
+    font-family: jester, arial, sans-serif;
+    font-size:3em; /* tamanho da fonte */
+    text-align:center; /* alinhamento */
+    text-decoration: underline; /* sublinhado */
+    font-style: italic; /* italic */
+    font-weight: bold; /* negrito */
+    text-shadow: 2px 2px 3px black; /* sombra */
+}
+
+p{
+    color:white;
+    font-family: roboto, sans-serif;
+    line-height: 1.2em; /* entrelinha */
+    /* font-weight: bold; /* negrito */
+}

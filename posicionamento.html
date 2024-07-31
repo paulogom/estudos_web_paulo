@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de posição</title>
+
+    <style>
+        div,span{
+            background-color: dodgerblue;
+            margin:20px;
+            padding:10px;
+            height: 400px;
+         }
+         .destaque{
+            color:blue;
+         }
+
+         #texto{
+            color:green;
+         }
+
+         p{
+            background-color: cadetblue;
+            padding:5px;
+            border:solid;
+         }
+
+         .row{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+         }
+    </style>
+</head>
+<body>
+
+    <h1>Propriedade Display</h1>
+
+    <!-- https://www.w3schools.com/cssref/pr_class_display.php -->
+
+    <!-- div é um elemento genérico de bloco sem significado específico -->
+
+    <!-- span é um elemento genérico de linha sem significado específico -->
+
+    <div>senac lapa tito</div> 
+    <span>senac lapa tito</span>
+
+    <h1 class="destaque">Classes e Ids</h1>
+
+    <p class="destaque">Olá Ricardo!</p>
+    <p id="texto">Olá Murilo!</p>
+
+    <!-- Uma mesma classe pode ser usada em vários elementos HTML. O Id deve ser usado em um único elemento HTML. -->
+
+    <h1>Flex</h1>
+    <div class="row">
+        <p style="flex-grow: 2;">Lado Esquerdo</p>
+        <p style="flex-grow: 4;">Centro</p>
+        <p style="flex-grow: 1;">Lado Direito</p>
+    </div>
+    
+</body>
+</html>

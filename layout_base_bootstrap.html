@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        :root{
+            --bs-primary-rgb: 100, 10, 240;
+            --bs-secondary-rgb: 240, 100, 220;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="bg-secondary text-primary text-center p-5 border border-5 border-primary">Título da Página</h1>
+    </header>
+    <nav class="navbar navbar-expand-sm bg-primary p-3">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="#">Link 4</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="row">
+        <main class="p-3 col-sm-8">
+            <h1 class="text-center">Conteúdo Principal</h1>
+            <img class="img-fluid d-block mx-auto" src="imagens/Batman.png" alt="logo do batman">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum possimus fugit velit esse fugiat quasi quaerat provident, deserunt ipsa, sequi officia inventore eos rerum praesentium dignissimos natus temporibus maxime aliquid. Molestias, officiis tenetur aliquam iure accusantium quia? Nulla ipsam, architecto a eligendi dolores alias veniam sint velit quod nesciunt dolorum, adipisci expedita ut corporis aliquam fugit nobis numquam, molestias culpa dolorem consectetur dignissimos quis sunt placeat? Molestiae dicta, error est alias aperiam, reprehenderit quo temporibus eligendi neque odio ab impedit totam natus nam accusamus rerum ad? Atque sapiente ducimus temporibus quos quod nisi blanditiis quo nobis a dolorum sed officia assumenda delectus, placeat vitae, cumque molestias. Ab vitae modi nulla, ad esse minus ea placeat laborum at unde doloribus dignissimos totam illo sed consectetur rem porro accusantium adipisci nam iusto praesentium, optio cupiditate! Consequatur et ad ut accusamus, rem, itaque facilis temporibus eveniet eaque alias, saepe doloribus libero quod recusandae. Quis dolore similique laudantium culpa iste. Nam laborum pariatur modi blanditiis optio nisi laudantium dolorem nostrum ad assumenda eveniet debitis at, est iusto. Ipsam, asperiores similique. Itaque hic eligendi pariatur numquam saepe blanditiis. Fugiat qui tempora sequi, sed illum cum id explicabo consequuntur nulla quaerat. Ratione quis nihil dolor blanditiis?</p>
+        </main>
+        <aside class="p-3 col-sm-4">
+            <h1 class="text-center">Conteúdo secundário</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel commodi debitis, eos adipisci nam quis saepe accusamus numquam quasi molestiae, ratione eaque in natus dolor voluptates soluta eveniet non illo. Ipsum, debitis similique nihil quia tempore sint. Unde quam distinctio magnam esse sequi, rem sed nesciunt delectus modi veniam eligendi ea provident! Quas id praesentium veritatis, dicta quia ab aut perspiciatis nesciunt quae atque neque debitis sequi, est recusandae dolorem aliquid. Facere laborum facilis quasi, numquam neque vitae veniam magnam distinctio earum iste rerum quos accusantium cum ipsam error nemo repellendus cumque modi. Quis accusantium quam asperiores dolore, explicabo commodi.</p>
+        </aside>
+    </div>
+    <footer>
+        <p class="bg-secondary p-3 text-center">Conteúdo do rodapé</p>
+    </footer>
+</body>
+</html>

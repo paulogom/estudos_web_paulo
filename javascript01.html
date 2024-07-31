@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de JavaScript</title>
+
+
+</head>
+<body id="corpo">
+    <h1>Alteração de conteúdo</h1>
+    <p id="teste">Olá Mundo!</p>
+    <button onclick="altera()">Clique aqui</button>
+
+    <script>
+        function altera(){
+            document.getElementById("teste").innerHTML = "Olá <br> JavaScript";  
+        }
+    </script>
+
+    <h1>Alteração de atributo</h1>
+
+    <button onclick="liga()">Liga</button>
+    <img id="lamp" src="imagens/off.gif" alt="lâmpada">
+    <button onclick="desliga()">Desliga</button>
+
+    <script>
+        function liga(){
+            document.getElementById("lamp").src = "imagens/on.gif";
+        }
+
+        function desliga(){
+            document.getElementById("lamp").src = "imagens/off.gif";
+        }
+    </script>
+
+    <h1>Alterando formatação</h1>
+    <button id="btn1" onclick="escuro()">Escuro</button>
+    <button id="btn2" onclick="claro()" style="display:none">Claro</button>
+
+    <script>
+        function escuro(){
+            document.getElementById("corpo").style.backgroundColor = "#333333";
+            document.getElementById("corpo").style.color = "white";
+            document.getElementById("btn1").style.display = "none";
+            document.getElementById("btn2").style.display = "block";
+        }
+
+        function claro(){
+            document.getElementById("corpo").style.backgroundColor = "white";
+            document.getElementById("corpo").style.color = "black";
+            document.getElementById("btn1").style.display = "block";
+            document.getElementById("btn2").style.display = "none";
+        }
+    </script>
+
+    <h1>Aparecer e ocultar</h1>
+    <button onclick="oculta('none')">Ocultar</button>
+    <button onclick="oculta('block')">Aparecer</button>
+    <p id="teste2">Olá mundo</p>
+
+    <script>
+        function oculta(x){
+            document.getElementById("teste2").style.display = x;
+        }
+    </script>
+    
+</body>
+</html>

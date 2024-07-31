@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout básico</title>
+    <style>
+        *{ /* seletor universal */
+           box-sizing: border-box; 
+        }
+        header{
+            background-color: #444444;
+            display:flex;
+            align-items: center;
+        }
+        nav{
+            background-color: #cbcbcb;
+        }
+        main{
+            background-color: #aaaaaa;
+            height: 400px;
+            width: 100%;
+            padding: 20px;
+        }
+        aside{
+            background-color: #444444;
+            height: 400px;
+            width: 100%;
+            padding: 20px;
+        }
+        footer{
+            background-color: black;
+            height: 150px;
+        }
+        .row{
+            display:flex;
+            flex-wrap: wrap;
+
+        }
+        header img{
+            height: 150px;
+        }
+        header h1{
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            margin:0;
+            padding:0;
+        }
+
+        nav li{
+            flex-grow: 1;
+            text-align: center;
+            
+        }
+
+        nav a{
+            text-decoration: none;
+            color:black;
+            display: block;
+            padding:5px;
+        }
+
+        nav a:hover{
+            background-color: black;
+            color:white;
+        }
+
+        @media(min-width:576px){
+            main{
+                width: 70%;
+            }
+            aside{
+                width:30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/Batman.png" alt="Logo">
+        <h1>Layout Básico</h1>
+    
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <main>
+            <!-- p>lorem -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi debitis eum, earum soluta reiciendis aspernatur adipisci assumenda quod iusto esse delectus sit facere. Fugiat vero perspiciatis excepturi, quisquam iure magnam?</p>
+        </main>
+        <aside>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi debitis eum, earum soluta reiciendis aspernatur adipisci assumenda quod iusto esse delectus sit facere. Fugiat vero perspiciatis excepturi, quisquam iure magnam?</p>
+        </aside>
+    </div>
+    <footer></footer>
+  
+</body>
+</html>
